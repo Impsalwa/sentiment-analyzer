@@ -17,12 +17,12 @@ wordnet_lemmatizer = WordNetLemmatizer() #turns words into their base form
 #remove the stopwords
 stopwords = set(w.rstrip() for w in open("stopwords.txt"))
 #open and read the data 
-positive_reviews = BeautifulSoup(open(r'C:\Users\Salwa\Documents\NLP udemy formation\Sentiment Analyzer\positive.review').read())
+positive_reviews = BeautifulSoup(open(r'positive.review').read())
 positive_reviews = positive_reviews.findAll('review_text')
 #print(positive_reviews)
 
 #same with neagtive reveiws 
-negative_reviews = BeautifulSoup(open(r'C:\Users\Salwa\Documents\NLP udemy formation\Sentiment Analyzer\negative.review').read())
+negative_reviews = BeautifulSoup(open(r'negative.review').read())
 negative_reviews = negative_reviews.findAll('review_text')
 #print(negative_reviews)
 
